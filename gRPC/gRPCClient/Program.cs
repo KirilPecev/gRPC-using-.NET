@@ -7,3 +7,10 @@ Greeter.GreeterClient client = new Greeter.GreeterClient(channel);
 HelloReply serverReply = await client.SayHelloAsync(message);
 Console.WriteLine(serverReply.Message);
 
+// ----------------------------------------------------------------------------------------
+
+Product.ProductClient productClient = new Product.ProductClient(channel);
+GetProductDetail product = new GetProductDetail { ProductId = 3 };
+ProductModel productInfo = await productClient.GetProductsInformationAsync(product);
+Console.WriteLine($"{productInfo.ProductName} | {productInfo.ProductDescription} | {productInfo.ProductPrice} | {productInfo.ProductStock}");
+
