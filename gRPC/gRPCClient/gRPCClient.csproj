@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="products.proto" />
+    <None Remove="productsService.proto" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,7 +22,7 @@
 
   <ItemGroup>
 	<Protobuf Include="greet.proto" GrpcServices="Client" />
-	<Protobuf Include="products.proto" GrpcServices="Client" />
+	<Protobuf Include="productsService.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>

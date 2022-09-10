@@ -61,7 +61,6 @@ namespace GrpcService.Services
         {
             Product newProduct = new Product()
             {
-                Id = request.Id,
                 Name = request.ProductName,
                 Category = request.CategoryName,
                 Manufacturer = request.Manufacturer,

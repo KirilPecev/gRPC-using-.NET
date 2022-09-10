@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace GrpcService.Persistance.Migrations
+namespace GrpcService.Persistence.Migrations
 {
     [DbContext(typeof(BlazorDbContext))]
     [Migration("20220910140520_Initial")]
